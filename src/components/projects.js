@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react';
 import reactCSS from 'reactcss';
-import Thumbnail from './thumbnail';
 import ProjectsInfo from './projectsInfo';
+
+const WIDTH = document.documentElement.clientWidth;
+console.log(20, WIDTH);
 
 const styles = reactCSS({
     default: {
@@ -23,7 +25,7 @@ const styles = reactCSS({
             position: 'relative',
         },
         thumbnail: {
-            width: 60,
+            width: WIDTH > 414 ? 60 : 30,
             borderRadius: 30,
             opacity: 0.8,
             marginTop: 5,
@@ -44,6 +46,12 @@ const styles = reactCSS({
             margin: 3,
             fontSize: 13,
             color: '#494949',
+        },
+        techUsed: {
+            display: 'block',
+            margin: 3,
+            fontSize: 13,
+            color: '#bbb',
         },
     },
 });
@@ -94,6 +102,15 @@ class Projects extends PureComponent {
                         >
                             Demo
                         </a>
+                        <p
+                            style={{
+                                display: 'inline',
+                                marginLeft: 5,
+                                color: '#494949',
+                            }}
+                        >
+                            |{' '}
+                        </p>
                         <a
                             style={styles.projectInfoLink}
                             href={project.gitHub}
@@ -101,17 +118,14 @@ class Projects extends PureComponent {
                         >
                             Git Hub
                         </a>
-                        <p style={styles.projectInfoText}>{project.techUsed}</p>
+                        <p style={styles.techUsed}>{project.techUsed}</p>
                     </span>
                 </div>
             );
         });
         return (
             <div style={styles.projectDisplayContainer}>
-                <Thumbnail
-                    imgUrl={ProjectsInfo[this.state.displayedThumbIndex].image}
-                    display={this.state.showThumbnail}
-                />
+
                 <p style={styles.sectionTitle}>
                     Projects
                 </p>
@@ -123,3 +137,10 @@ class Projects extends PureComponent {
 }
 
 export default Projects;
+
+/*
+<Thumbnail
+    imgUrl={ProjectsInfo[this.state.displayedThumbIndex].image}
+    display={this.state.showThumbnail}
+/>
+*/
