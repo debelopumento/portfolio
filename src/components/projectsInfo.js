@@ -33,7 +33,7 @@ const ProjectsInfo = [
     },
     {
         name: 'Tobu',
-        description: 'A Voice Control Runner Game for Google Chrome, with Web Speech Recognition API.',
+        description: 'A Voice Control Runner Game for Google Chrome, with Web Speech Recognition API. Player says Jump to make the avatar jump. ',
         demo: 'https://cryptic-atoll-29351.herokuapp.com/',
         gitHub: 'https://github.com/debelopumento/phaser-test',
         techUsed: [
@@ -70,6 +70,7 @@ const ProjectsInfo = [
         demo: 'https://debelopumento.github.io/Yelp-with-Google-Map/',
         gitHub: 'https://github.com/debelopumento/Yelp-with-Google-Map',
         techUsed: ['HTML, ', 'CSS, ', 'Javascript, ', 'JQuery'],
+        thumbnail: 'https://github.com/debelopumento/portfolio/blob/master/public/images/thumb_yelpWGMap.png?raw=true',
     },
 ];
 

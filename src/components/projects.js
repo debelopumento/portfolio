@@ -18,7 +18,7 @@ const styles = reactCSS({
         },
         projectContainer: {
             width: '100%',
-            height: 150,
+            height: WIDTH > 414 ? 150 : 170,
             display: 'block',
         },
         thumbContainer: {
