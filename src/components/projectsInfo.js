@@ -13,7 +13,8 @@ const ProjectsInfo = [
             'Redux, ',
             'NodeJs',
         ],
-        image: '',
+        thumbnail: 'https://github.com/debelopumento/portfolio/blob/master/public/images/thumb_phaserTest.png?raw=true',
+        image: 'https://github.com/debelopumento/flashcards/raw/dev/public/images/flashcards-screenShots.png?raw=true',
     },
     {
         name: 'Tobu',
@@ -29,7 +30,7 @@ const ProjectsInfo = [
             'Redux, ',
             'NodeJs',
         ],
-
+        thumbnail: 'https://github.com/debelopumento/portfolio/blob/master/public/images/thumb_phaserTest.png?raw=true',
         image: 'https://github.com/debelopumento/phaser-test/blob/dev/images/tobu-screenShots.png?raw=true',
     },
 ];
