@@ -1,24 +1,31 @@
-import React, { Component } from 'react';
-import reactCSS from 'reactcss';
+import React, { PureComponent } from 'react';
 import Nav from './nav';
+import Summary from './summary';
+import projectDisplay from './projectDisplay';
+import reactCSS from 'reactcss';
 
 const styles = reactCSS({
   default: {
-    navLink: {
-      marginRight: 10,
+    sectionTitle: {
       color: '#ff77c6',
-      fontSize: 13,
     },
   },
 });
 
-const Summary = () => (
-  <p style={{ color: '#727272', fontSize: 13 }}>
-    HTML, CSS, Javascript, React, Redux, NodeJS, Express, D3, Phaser, Passport
-  </p>
-);
+class Projects extends PureComponent {
+  render() {
+    return (
+      <div>
+        <p style={styles.sectionTitle}>
+          Projects
+        </p>
+        {projectDisplay}
+      </div>
+    );
+  }
+}
 
-class App extends Component {
+class App extends PureComponent {
   render() {
     return (
       <div>
@@ -27,6 +34,7 @@ class App extends Component {
         </div>
         <Nav />
         <Summary />
+        <Projects />
       </div>
     );
   }
