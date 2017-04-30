@@ -10,12 +10,13 @@
     "react-router-dom": "^4.1.1",
     "reactcss": "^1.2.2",
     "redux": "^3.6.0",
-    "redux-logger": "^3.0.1",
     "redux-promise-middleware": "^4.2.0",
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+        "redux-logger": "^3.0.1",
+
   },
   "scripts": {
     "start": "react-scripts start",

@@ -8,6 +8,20 @@ const styles = reactCSS({
         sectionTitle: {
             color: '#ff77c6',
         },
+        date: {
+            display: 'block',
+            color: '#ccc',
+            fontSize: 12,
+            marginLeft: 10,
+        },
+        event: {
+            fontSize: 13,
+            marginLeft: 10,
+            color: '#494949',
+        },
+        link: {
+            color: '#494949',
+        },
     },
 });
 
@@ -24,15 +38,19 @@ class Activities extends PureComponent {
                 if (activity.type === 'push') {
                     return (
                         <div key={index}>
-                            <p>{activity.date}</p>
-                            <p>
+                            <p style={styles.date}>{activity.date}</p>
+                            <p style={styles.event}>
                                 Pushed
                                 {' '}
                                 {activity.commits}
                                 {' '}
                                 commit(s) to
                                 {' '}
-                                <a href={activity.repoUrl} target="blank">
+                                <a
+                                    href={activity.repoUrl}
+                                    target="blank"
+                                    style={styles.link}
+                                >
                                     {activity.repoName}
                                 </a>
                             </p>
@@ -41,12 +59,16 @@ class Activities extends PureComponent {
                 } else if (activity.type === 'watch') {
                     return (
                         <div key={index}>
-                            <p>
+                            <p style={styles.date}>
                                 {activity.date}
                             </p>
-                            <p>
+                            <p style={styles.event}>
                                 Began watching
-                                <a href={activity.repoUrl} target="blank">
+                                <a
+                                    href={activity.repoUrl}
+                                    target="blank"
+                                    style={styles.link}
+                                >
                                     {' '}{activity.repoName}
                                 </a>
                             </p>

@@ -10,7 +10,6 @@ export const loadActivities = () =>
                 const activities = data.data;
                 let index = 0;
                 let parsedActivities = [];
-                console.log(19, activities);
                 const parseActivity = index => {
                     const activity = activities[index];
                     const type = activity.type;
