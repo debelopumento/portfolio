@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "react-scripts": "0.9.5",
-        "redux-logger": "^3.0.1",
+    "redux-logger": "^3.0.1"
 
   },
   "scripts": {
