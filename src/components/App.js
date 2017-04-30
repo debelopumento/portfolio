@@ -3,6 +3,7 @@ import Nav from './nav';
 import Summary from './summary';
 import reactCSS from 'reactcss';
 import Projects from './projects';
+import Activities from './activities';
 
 const WIDTH = document.documentElement.clientWidth;
 
@@ -11,9 +12,9 @@ class App extends PureComponent {
     return (
       <div style={{ width: WIDTH > 414 ? '80%' : '96%', margin: 'auto' }}>
         <div>
-          <h2 style={{ marginBottom: 0, color: '#606060', display: 'inline' }}>
+          <h3 style={{ marginBottom: 0, color: '#606060', display: 'inline' }}>
             Di Ye
-          </h2>
+          </h3>
           <h6 style={{ marginLeft: 25, display: 'inline', color: '#aaa' }}>
             +1 (408)-477-0586
           </h6>
@@ -26,6 +27,7 @@ class App extends PureComponent {
         <Nav />
         <Summary />
         <Projects />
+        <Activities />
       </div>
     );
   }

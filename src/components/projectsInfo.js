@@ -18,7 +18,7 @@ const ProjectsInfo = [
 
     {
         name: 'Is It Hotter Than Today In History',
-        description: 'This web app shows the user if it is currently hotter than the same day in the selected year in history.',
+        description: 'This web app visulizes the comparison of current temperature and historical temperature. ',
         demo: 'https://is-it-getting-hotter.herokuapp.com',
         gitHub: 'https://github.com/debelopumento/weather-chart',
         techUsed: [
@@ -66,10 +66,17 @@ const ProjectsInfo = [
     },
     {
         name: 'Yelp with Google Map',
-        description: 'This app helps you search for local businesses with Yelp and provides links to navigation with Google Map. It is a combination of Yelp and Goolge Map for mobile devices.',
+        description: 'This app helps you search for local businesses with Yelp and provides links to navigation with Google Map.',
         demo: 'https://debelopumento.github.io/Yelp-with-Google-Map/',
         gitHub: 'https://github.com/debelopumento/Yelp-with-Google-Map',
-        techUsed: ['HTML, ', 'CSS, ', 'Javascript, ', 'JQuery'],
+        techUsed: [
+            'HTML, ',
+            'CSS, ',
+            'Javascript, ',
+            'JQuery, ',
+            'Yelp API, ',
+            'Google Map API',
+        ],
         thumbnail: 'https://github.com/debelopumento/portfolio/blob/master/public/images/thumb_yelpWGMap.png?raw=true',
     },
 ];

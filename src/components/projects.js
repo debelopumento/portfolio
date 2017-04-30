@@ -3,7 +3,6 @@ import reactCSS from 'reactcss';
 import ProjectsInfo from './projectsInfo';
 
 const WIDTH = document.documentElement.clientWidth;
-console.log(20, WIDTH);
 
 const styles = reactCSS({
     default: {
@@ -18,12 +17,11 @@ const styles = reactCSS({
         },
         projectContainer: {
             width: '100%',
-            height: WIDTH > 414 ? 150 : 170,
+            height: WIDTH > 414 ? 150 : 180,
             display: 'block',
+            marginBottom: 15,
         },
-        thumbContainer: {
-            position: 'relative',
-        },
+
         thumbnail: {
             width: WIDTH > 414 ? 60 : 30,
             borderRadius: 30,
@@ -57,6 +55,7 @@ const styles = reactCSS({
 });
 
 class Projects extends PureComponent {
+    /*
     state = {
         showThumbnail: false,
         displayedThumbIndex: 0,
@@ -71,14 +70,13 @@ class Projects extends PureComponent {
     hideImg = event => {
         this.setState({ showThumbnail: false });
     };
+    */
 
     render() {
         const projectDisplay = Object.keys(
             ProjectsInfo
         ).map((projectId, index) => {
             const project = ProjectsInfo[index];
-            console.log(1, project);
-
             return (
                 <div key={index} style={styles.projectContainer}>
                     <span style={styles.thumbContainer}>
@@ -86,8 +84,6 @@ class Projects extends PureComponent {
                             style={styles.thumbnail}
                             src={project.thumbnail}
                             id={index}
-                            onMouseOver={this.showImg}
-                            onMouseOut={this.hideImg}
                         />
                     </span>
                     <span style={styles.infoContainer}>

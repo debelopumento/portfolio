@@ -5,3 +5,9 @@ html, body {
 	font-family: 'Poppins', sans-serif;
 
 }
+
+footer {
+	color: #ddd;
+	font-size: 10px;
+	text-align: center;
+}

@@ -1,9 +1,17 @@
 import { combineReducers } from 'redux';
 
-let standinReducer;
+const activitiesReducer = (state = null, action) => {
+    switch (action.type) {
+        case 'LOAD_ACTIVITIES': {
+            return action.payload;
+        }
+        default:
+            return state;
+    }
+};
 
 const allReducers = combineReducers({
-    standin: standinReducer,
+    activities: activitiesReducer,
 });
 
 export default allReducers;
