@@ -3,4 +3,4 @@ Portfolio website.
 Built with React and Redux.
 
 URL: 
-[https://diye.herokuapp.com/](https://diye.herokuapp.com/)
+[https://debelopumento.github.io/portfolio/](https://debelopumento.github.io/portfolio/)
