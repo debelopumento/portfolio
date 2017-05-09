@@ -16,7 +16,8 @@ class App extends PureComponent {
           style={{
             borderBottom: "0.5px dotted #ffd1ec",
             paddingBottom: 15,
-            backgroundColor: "#e85568"
+            backgroundColor: "#e85568",
+            textAlign: "center"
           }}
         >
           <div style={{ textAlign: "center" }}>
@@ -42,15 +43,20 @@ class App extends PureComponent {
 
           </div>
           <Nav />
-          <h5 style={{ color: "white" }}>
+          <h5 style={{ color: "white", margin: 15 }}>
             Full stack engineer passionate about creating, learning and building things, 3D graphic artist, game designer, strategic thinker.
           </h5>
-          <Summary />
+
         </div>
+        <Summary />
+
         <div className="main">
           <Projects />
+
           <Artworks />
+
           <Activities />
+
         </div>
       </div>
     );
