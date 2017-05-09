@@ -57,7 +57,11 @@ class Activities extends PureComponent {
             });
             return (
                 <div
-                    style={{ margin: 5, marginBottom: 15, textAlign: "center" }}
+                    style={{
+                        margin: 15,
+                        marginBottom: 15,
+                        textAlign: "center"
+                    }}
                 >
                     <p
                         style={{
