@@ -18,7 +18,7 @@ class Activities extends PureComponent {
                     return (
                         <div key={index}>
                             <p style={{ color: "#aaa" }}>{activity.date}</p>
-                            <p style={{ color: "#d4c5a8" }}>
+                            <p style={{ color: "#825870" }}>
                                 Pushed
                                 {" "}
                                 {activity.commits}
@@ -28,7 +28,7 @@ class Activities extends PureComponent {
                                 <a
                                     href={activity.repoUrl}
                                     target="blank"
-                                    style={{ color: "#d4c5a8" }}
+                                    style={{ color: "#825870" }}
                                 >
                                     {activity.repoName}
                                 </a>
@@ -41,12 +41,12 @@ class Activities extends PureComponent {
                             <p style={{ color: "#aaa" }}>
                                 {activity.date}
                             </p>
-                            <p style={{ color: "#d4c5a8" }}>
+                            <p style={{ color: "#825870" }}>
                                 Stared
                                 <a
                                     href={activity.repoUrl}
                                     target="blank"
-                                    style={{ color: "#d4c5a8" }}
+                                    style={{ color: "#825870" }}
                                 >
                                     {" "}{activity.repoName}
                                 </a>
@@ -63,7 +63,7 @@ class Activities extends PureComponent {
                         style={{
                             textAlign: "center",
                             fontSize: 25,
-                            color: "#ffd1ec",
+                            color: "#825870",
                             marginTop: 55
                         }}
                     >

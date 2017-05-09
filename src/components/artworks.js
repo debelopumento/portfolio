@@ -7,12 +7,17 @@ import "../index.css";
 class Artworks extends PureComponent {
 	render() {
 		return (
-			<div style={{ borderBottom: "1px dotted #ffd1ec" }}>
+			<div
+				style={{
+					borderBottom: "1px dotted #6eb7a8",
+					paddingTop: 15
+				}}
+			>
 				<p
 					style={{
 						textAlign: "center",
 						fontSize: 25,
-						color: "#ffd1ec",
+						color: "#ef5067",
 						marginTop: 55
 					}}
 				>

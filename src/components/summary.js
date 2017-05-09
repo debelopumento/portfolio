@@ -14,13 +14,14 @@ const styles = reactCSS({
 const Summary = () => (
   <p
     style={{
-      color: "#727272",
+      color: "white",
       fontSize: 13,
       marginTop: 25,
+      margin: 15,
       textAlign: "center"
     }}
   >
-    HTML, CSS, Javascript, React, Redux, NodeJS, Express, D3, Phaser, Passport
+    HTML, CSS, JavaScript, React, Redux, NodeJS, Express, MongoDB, Mongoose, D3, Phaser, Passport, jQuery
   </p>
 );
 

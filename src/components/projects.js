@@ -13,65 +13,6 @@ class Projects extends PureComponent {
     }
 
     render() {
-        /*
-        const styles = reactCSS({
-            default: {
-                projectDisplayContainer: {
-                    width: "90%"
-                },
-                sectionTitle: {
-                    color: "#ff77c6"
-                },
-                sectionTitle: {
-                    color: "#ff77c6"
-                },
-                projectContainer: {
-                    width: "100%",
-                    height: 180,
-                    display: "block",
-                    marginBottom: 15
-                },
-
-                thumbnail: {
-                    width: 60,
-                    borderRadius: 30,
-                    opacity: 0.8,
-                    marginTop: 5
-                },
-                infoContainer: {
-                    width: "80%",
-                    height: 150,
-                    marginLeft: 15,
-                    position: "absolute"
-                },
-                projectInfoText: {
-                    display: "block",
-                    margin: 3,
-                    fontSize: 13,
-                    color: "#494949"
-                },
-                projectInfoLink: {
-                    margin: 3,
-                    fontSize: 13,
-                    color: "#494949"
-                },
-                techUsed: {
-                    display: "block",
-                    margin: 3,
-                    fontSize: 13,
-                    color: "#bbb"
-                }
-            },
-            mobile: {
-                projectContainer: {
-                    height: 150
-                },
-                thumbnail: {
-                    width: 30
-                }
-            }
-        });
-        */
         const projectDisplay = Object.keys(
             ProjectsInfo
         ).map((projectId, index) => {
@@ -91,7 +32,7 @@ class Projects extends PureComponent {
                         <p className="projectTitle">{project.name}</p>
                         <p
                             style={{
-                                color: "#595959",
+                                color: "#865c74",
                                 marginTop: 2,
                                 marginBottom: 2
                             }}
@@ -99,7 +40,7 @@ class Projects extends PureComponent {
                             {project.description}
                         </p>
                         <a
-                            style={{ color: "#d4c5a8" }}
+                            style={{ color: "#5fb4a2" }}
                             href={project.demo}
                             target="blank"
                         >
@@ -115,7 +56,7 @@ class Projects extends PureComponent {
                             |{" "}
                         </p>
                         <a
-                            style={{ color: "#d4c5a8" }}
+                            style={{ color: "#5fb4a2" }}
                             href={project.gitHub}
                             target="blank"
                         >
@@ -129,12 +70,12 @@ class Projects extends PureComponent {
             );
         });
         return (
-            <div>
+            <div style={{ margin: 15 }}>
                 <p
                     style={{
                         textAlign: "center",
                         fontSize: 25,
-                        color: "#ffd1ec",
+                        color: "#e85568",
                         marginTop: 55
                     }}
                 >

@@ -1,8 +1,11 @@
 html, body {
 	width: 100%;
 	margin: 0;
+	margin-top: 0;
 	padding: 0;
+	padding-top: 0;
 	font-family: 'Poppins', sans-serif;
+	background-color: #f9f3e8;
 }
 
 .main {
@@ -21,7 +24,7 @@ html, body {
 	width: 100px;
 	height: 100px;
 	border-radius: 100%;
-	border: 1px solid #e6e6e6;
+	border: 2px solid white;
 	opacity: 0.85;
 }
 
@@ -29,9 +32,8 @@ html, body {
 	width: 150px;
 	height: 150px;
 	border-radius: 100%;
-	border: 1px solid #e6e6e6;
+	border: 3px solid white;
 	margin: 25px;
-	opacity: 0.8;
 }
 
 .projectInfoContainer {
@@ -42,10 +44,8 @@ html, body {
 	margin-top: 0;
 	margin-bottom: 5px;
 	font-size: 20px;
-	color: #595959;
+	color: #865c74;
 }
-
-
 
 footer {
 	color: #aaa;

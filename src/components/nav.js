@@ -8,10 +8,10 @@ const styles = reactCSS({
       display: "inline-block",
       listStyleType: "none",
       marginRight: 10,
-      color: "#d4c5a8"
+      color: "white"
     },
     navLink: {
-      color: "#feb5e0",
+      color: "white",
       fontSize: 14
     }
   }

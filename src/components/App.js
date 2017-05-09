@@ -13,30 +13,30 @@ class App extends PureComponent {
     return (
       <div>
         <div
-          style={{ borderBottom: "0.5px dotted #ffd1ec", paddingBottom: 15 }}
+          style={{
+            borderBottom: "0.5px dotted #ffd1ec",
+            paddingBottom: 15,
+            backgroundColor: "#e85568"
+          }}
         >
           <div style={{ textAlign: "center" }}>
-            <h3 style={{ marginBottom: 0, color: "#606060", display: "block" }}>
+            <h3
+              style={{
+                marginTop: 0,
+                marginBottom: 0,
+                paddingTop: 15,
+                fontSize: 20,
+                color: "white",
+                display: "block"
+              }}
+            >
               Di Ye
             </h3>
-            <img
-              style={{
-                width: 70,
-                opacity: 0.8,
-                border: "1px, #ffa089, solid",
-                borderRadius: 55,
-                display: "block",
-                margin: "auto",
-                padding: 5
-              }}
-              src={img}
-            />
-            <h5 style={{ display: "inline", color: "#aaa" }}>
-              +1 (408)-477-0586
-            </h5>
-            <h5 style={{ marginLeft: 10, display: "inline" }}>
-              <a style={{ color: "#aaa" }} href="mailto:imdiye@gmail.com">
-                imdiye@gmail.com
+            <img className="thumbnail" src={img} />
+
+            <h5 style={{ display: "block" }}>
+              <a style={{ color: "white" }} href="mailto:imdiye@gmail.com">
+                glamorouspull@gmail.com
               </a>
             </h5>
           </div>
