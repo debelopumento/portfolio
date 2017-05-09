@@ -36,11 +36,15 @@ class App extends PureComponent {
 
             <h5 style={{ display: "block" }}>
               <a style={{ color: "white" }} href="mailto:imdiye@gmail.com">
-                glamorouspull@gmail.com
+                glamorousPull@gmail.com
               </a>
             </h5>
+
           </div>
           <Nav />
+          <h5 style={{ color: "white" }}>
+            Full stack engineer passionate about creating, learning and building things, 3D graphic artist, game designer, strategic thinker.
+          </h5>
           <Summary />
         </div>
         <div className="main">

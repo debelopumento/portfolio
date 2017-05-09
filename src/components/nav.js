@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import reactCSS from "reactcss";
-
+import githubImg from "../../public/images/GitHub-Mark-Light-64px.png";
+import linkedInImg from "../../public/images/linkedIn.png";
 const styles = reactCSS({
   default: {
     listItem: {
@@ -13,6 +14,9 @@ const styles = reactCSS({
     navLink: {
       color: "white",
       fontSize: 14
+    },
+    icon: {
+      width: 20
     }
   }
 });
@@ -25,19 +29,18 @@ const Nav = () => (
         href="https://github.com/debelopumento/"
         target="_blank"
       >
-        Github
+        <img src={githubImg} style={styles.icon} />
       </a>
     </li>
-    <li style={styles.listItem}>
-      |
-    </li>
+
     <li style={styles.listItem}>
       <a
         style={styles.navLink}
         href="https://www.linkedin.com/in/di-ye-51878132"
         target="_blank"
       >
-        LinkedIn
+        <img src={linkedInImg} style={styles.icon} />
+
       </a>
     </li>
   </div>
