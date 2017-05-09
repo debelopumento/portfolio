@@ -1,29 +1,8 @@
-import React, { PureComponent } from 'react';
-import reactCSS from 'reactcss';
-import { connect } from 'react-redux';
-import * as actions from '../actions/actionIndex';
-
-const styles = reactCSS({
-    default: {
-        sectionTitle: {
-            color: '#ff77c6',
-        },
-        date: {
-            display: 'block',
-            color: '#ccc',
-            fontSize: 12,
-            marginLeft: 10,
-        },
-        event: {
-            fontSize: 13,
-            marginLeft: 10,
-            color: '#494949',
-        },
-        link: {
-            color: '#494949',
-        },
-    },
-});
+import React, { PureComponent } from "react";
+//import reactCSS from "reactcss";
+import { connect } from "react-redux";
+import * as actions from "../actions/actionIndex";
+import "../index.css";
 
 class Activities extends PureComponent {
     componentWillMount() {
@@ -35,41 +14,41 @@ class Activities extends PureComponent {
                 this.props.activities
             ).map(index => {
                 const activity = this.props.activities[index];
-                if (activity.type === 'push') {
+                if (activity.type === "push") {
                     return (
                         <div key={index}>
-                            <p style={styles.date}>{activity.date}</p>
-                            <p style={styles.event}>
+                            <p style={{ color: "#aaa" }}>{activity.date}</p>
+                            <p style={{ color: "#825870" }}>
                                 Pushed
-                                {' '}
+                                {" "}
                                 {activity.commits}
-                                {' '}
+                                {" "}
                                 commit(s) to
-                                {' '}
+                                {" "}
                                 <a
                                     href={activity.repoUrl}
                                     target="blank"
-                                    style={styles.link}
+                                    style={{ color: "#825870" }}
                                 >
                                     {activity.repoName}
                                 </a>
                             </p>
                         </div>
                     );
-                } else if (activity.type === 'watch') {
+                } else if (activity.type === "watch") {
                     return (
                         <div key={index}>
-                            <p style={styles.date}>
+                            <p style={{ color: "#aaa" }}>
                                 {activity.date}
                             </p>
-                            <p style={styles.event}>
-                                Began watching
+                            <p style={{ color: "#825870" }}>
+                                Stared
                                 <a
                                     href={activity.repoUrl}
                                     target="blank"
-                                    style={styles.link}
+                                    style={{ color: "#825870" }}
                                 >
-                                    {' '}{activity.repoName}
+                                    {" "}{activity.repoName}
                                 </a>
                             </p>
                         </div>
@@ -77,23 +56,31 @@ class Activities extends PureComponent {
                 }
             });
             return (
-                <div style={styles.activitiesContainer}>
-                    <p style={styles.sectionTitle}>
-                        Activities
+                <div
+                    style={{ margin: 5, marginBottom: 15, textAlign: "center" }}
+                >
+                    <p
+                        style={{
+                            textAlign: "center",
+                            fontSize: 25,
+                            color: "#825870",
+                            marginTop: 55
+                        }}
+                    >
+                        GitHub Activities
                     </p>
                     {activitiesDisplay}
                 </div>
             );
-        } else
-            return <div />;
+        } else return <div />;
     }
 }
 
 export default connect(
     storeState => ({
-        activities: storeState.activities,
+        activities: storeState.activities
     }),
     {
-        loadActivities: actions.loadActivities,
+        loadActivities: actions.loadActivities
     }
 )(Activities);

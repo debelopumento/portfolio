@@ -1,19 +1,27 @@
-import React, { Component } from 'react';
-import reactCSS from 'reactcss';
+import React, { Component } from "react";
+import reactCSS from "reactcss";
 
 const styles = reactCSS({
   default: {
     navLink: {
       marginRight: 10,
-      color: '#ff77c6',
-      fontSize: 13,
-    },
-  },
+      color: "#ff77c6",
+      fontSize: 13
+    }
+  }
 });
 
 const Summary = () => (
-  <p style={{ color: '#727272', fontSize: 13, marginTop: 25 }}>
-    HTML, CSS, Javascript, React, Redux, NodeJS, Express, D3, Phaser, Passport
+  <p
+    style={{
+      color: "white",
+      fontSize: 13,
+      marginTop: 25,
+      margin: 15,
+      textAlign: "center"
+    }}
+  >
+    HTML, CSS, JavaScript, React, Redux, NodeJS, Express, MongoDB, Mongoose, D3, Phaser, Passport, jQuery
   </p>
 );
 

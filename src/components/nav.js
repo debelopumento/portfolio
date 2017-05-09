@@ -1,24 +1,24 @@
-import React, { Component } from 'react';
-import reactCSS from 'reactcss';
+import React, { Component } from "react";
+import reactCSS from "reactcss";
 
 const styles = reactCSS({
   default: {
     listItem: {
-      listStyleType: 'none',
-      display: 'inline-block',
-      listStyleType: 'none',
+      listStyleType: "none",
+      display: "inline-block",
+      listStyleType: "none",
       marginRight: 10,
-      color: '#ff77c6',
+      color: "white"
     },
     navLink: {
-      color: '#ff77c6',
-      fontSize: 13,
-    },
-  },
+      color: "white",
+      fontSize: 14
+    }
+  }
 });
 
 const Nav = () => (
-  <div>
+  <div style={{ textAlign: "center" }}>
     <li style={styles.listItem}>
       <a
         style={styles.navLink}
